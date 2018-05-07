@@ -1,4 +1,4 @@
-const { toPascalCase } = require('./utils/parsing.js');
+const { toCamelCase } = require('./utils/parsing.js');
 
 const modelBuilder = require('./modelBuilder.js');
 const repositoryBuilder = require('./repositoryBuilder.js');
@@ -13,7 +13,7 @@ const controllerWriter = require('./controllerWriter.js');
 
 module.exports = {
     generateModel: async (opts) => {
-        const name = toPascalCase(opts.modelName);
+        const name = toCamelCase(opts.modelName);
         console.log(`Generating new model ${name}...`);
         let files = [];
         const interf = await modelBuilder.getInterface(name);
