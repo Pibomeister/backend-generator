@@ -1,0 +1,14 @@
+{
+    "classes" : [
+        {
+            "name": "Dog",
+            "description": "Dogs are very cool animals", 
+            "code" : "export class Dog {constructor(public name: string){console.log('hello world');}public bark(message: string): void {console.log(`${this.name} is barking ${message}`);} }"
+        },
+        {
+            "name": "Cat",
+            "description": "Cats are very decent animals", 
+            "code" : "export class Cat {constructor(public name: string){ console.log('hello world');}public meow(message: string): void {console.log(`${this.name} is meowing ${message}`);} }"
+        }
+    ]
+}
